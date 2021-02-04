@@ -9,9 +9,15 @@ let link=['https://www.youtube.com/',
             'https://www.apple.com/'
 
 ]
+let colors = ['LightSkyBlue',
+               'Azure',
+               'Beige',
+               'Chocolate'
+
+]
 
 function random(n,x){
-    return Math.floor(Math.random()*(x-n)+n)
+  return Math.floor(Math.random()*(x-n)+n)
 }
 
 button.addEventListener('click',function(){
@@ -19,5 +25,5 @@ button.addEventListener('click',function(){
 })
 
 button1.addEventListener('click', function(){ 
-document.body.style.backgroundColor = 'Azure'
+document.body.style.backgroundColor = colors[random(0,4)]
 })
