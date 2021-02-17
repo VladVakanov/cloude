@@ -11,7 +11,7 @@ let averageterm = sum / Object.keys(term).length;
 console.log("Средняя температура всех стран: " + averageterm);
 
 function maxT(obj) {
-  let max = 0;
+  let max = -Infinity;
   for (let i in obj) {
       if(max < obj[i]) max = obj[i];
   }
