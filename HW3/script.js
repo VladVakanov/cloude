@@ -70,7 +70,6 @@ function saveTodo() {
 function setData() {
     let date = new Date()
 }
-//Удаление todoList 
 clearBtn.addEventListener('click', function () {
     ul.innerHTML = '';
     localStorage.clear();
